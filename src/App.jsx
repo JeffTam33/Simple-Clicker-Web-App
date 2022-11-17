@@ -7,15 +7,18 @@ function App() {
   const [countList, setCountList] = useState([])
 
   function setRecord() {
-    setCountList(countList.concat(<Record name={document.getElementById('name_input').value} count={count} />))
+    setCountList(countList.concat(<Record name={document.getElementById('name_input').value} count={count} id={countList.length} removeMethod={deleteItem}/>))
     clearAll()
+  }
+
+  function deleteItem(id) {
+    
   }
 
   function clearAll() {
     setCount(0)
     document.getElementById('name_input').value = ""
   }
-  
   return (
     <div className="app">
       <div className='app_wrapper'>
@@ -32,7 +35,7 @@ function App() {
           <button className='sub' onClick={() => setCount(count - 1)}>-</button>
           <button className='clear' onClick={() => clearAll()}>Clear</button>
           <button className='set' onClick={() => setRecord()}>Record</button>
-          <button className='set' onClick={() => setCountList = []}>Reset List</button>
+          <button className='reset' onClick={() => setCountList([])}>Reset List</button>
         </div>
         <div className='record_container'>
           <span className='record_title'>List: </span>
