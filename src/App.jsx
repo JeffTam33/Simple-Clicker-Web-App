@@ -7,12 +7,8 @@ function App() {
   const [countList, setCountList] = useState([])
 
   function setRecord() {
-    setCountList(countList.concat(<Record name={document.getElementById('name_input').value} count={count} id={countList.length} removeMethod={deleteItem}/>))
+    setCountList(countList.concat(<Record name={document.getElementById('name_input').value} count={count} />))
     clearAll()
-  }
-
-  function deleteItem(id) {
-    
   }
 
   function clearAll() {
