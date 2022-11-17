@@ -57,22 +57,14 @@
   outline: none;
 }
 
-
 .record_container {
-  height: 150px;
-  width: 300px;
-  margin-top: 150px;
-  background-color: white;
-  color: black;
-  font-size: 16px;
-}
-
-.record_container {
-  background-color: white;
-  height: 600px;
-  width: 300px;
+  width: 290px;
   border-radius: 10px;
   margin-right: 100px;
+  margin-top: 150px;
+  background-color: white;
+  padding: 10px;
+  color: black;
 }
 
 .record_title {
@@ -91,8 +83,7 @@
 .record {
   border-radius: 10px;
   width: 250px;
-  margin-left: 25px;
-  margin-top: 10px;
-  border: 1px solid black;
+  margin-left: 15px;
+  margin-bottom: 10px;
   background-color: #8492f0;
 }

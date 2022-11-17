@@ -30,12 +30,12 @@ function App() {
         <div className='buttons'>
           <button className='add' onClick={() => setCount(count + 1)}>+</button>
           <button className='sub' onClick={() => setCount(count - 1)}>-</button>
-          <button className='clear' onClick={() => clearAll()}>Clear
-          </button>
-          <button className='set' onClick={() => setRecord()}>Done</button>
+          <button className='clear' onClick={() => clearAll()}>Clear</button>
+          <button className='set' onClick={() => setRecord()}>Record</button>
+          <button className='set' onClick={() => setCountList = []}>Reset List</button>
         </div>
         <div className='record_container'>
-          <span className='record_title'>List</span>
+          <span className='record_title'>List: </span>
             {countList}
         </div>
       </div>
